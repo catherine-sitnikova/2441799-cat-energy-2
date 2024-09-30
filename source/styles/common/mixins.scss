@@ -9,7 +9,10 @@
 }
 
 @mixin button {
+  font-family: $secondary-font;
   text-align: center;
+  text-transform: uppercase;
+  border: none;
   color: $secondary-color;
   background-color: $basic-green;
 }
