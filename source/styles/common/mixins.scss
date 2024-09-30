@@ -7,3 +7,9 @@
     src: $font-src;
   }
 }
+
+@mixin button {
+  text-align: center;
+  color: $secondary-color;
+  background-color: $basic-green;
+}
