@@ -14,3 +14,25 @@
   list-style-type: none;
   color: $special_dark-grey;
 }
+
+.special__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+    background-color: $basic-green;
+  }
+}
+
+.special__item p {
+  margin: 0;
+  margin-left: 80px;
+}
