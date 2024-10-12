@@ -1,0 +1,28 @@
+.main-nav__toggle {
+  position: absolute;
+  top: 20;
+  right: 0;
+
+  width: 24px;
+  height: 24px;
+  padding: 4px 0;
+
+  border: none;
+  mask-image: url("../../icons/stack.svg#navicon");
+  background-color: #000000;
+}
+
+.main-nav__toggle--close {
+  position: absolute;
+  top: 23;
+  right: 0;
+
+  display: none;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  border: none;
+  mask-image: url("../../icons/stack.svg#cross");
+  background-color: #000000;
+}
