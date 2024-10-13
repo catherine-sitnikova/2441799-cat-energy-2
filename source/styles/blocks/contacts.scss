@@ -2,6 +2,16 @@
   background-color: #f2f2f2;
 }
 
+.contacts__logo-text {
+  display: block;
+  width: 128px;
+  height: 24px;
+  background-color: #111111;
+  mask-image: url("../../images/logo-text.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
 .contacts__social-list {
   margin: 0;
   padding: 0;
