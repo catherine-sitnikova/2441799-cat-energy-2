@@ -5,3 +5,17 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.main-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
