@@ -1,16 +1,22 @@
-.cards-all {
-  .cards__title {
-    text-align: center;
+.cards-all__title {
+  position: relative;
+  text-align: center;
 
-    ::before {
-      content: "";
-      display: block;
+  padding-top: 53px;
 
-      background-image: url("../../icons/stack.svg#cross");
-      background-size: 30px 30px;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 39px;
+    right: 50%;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../../icons/stack.svg#plus");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
   }
 }
 
