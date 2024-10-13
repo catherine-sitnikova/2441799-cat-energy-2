@@ -1,6 +1,16 @@
 .cards-all {
-  h3 {
+  .cards__title {
     text-align: center;
+
+    ::before {
+      content: "";
+      display: block;
+
+      background-image: url("../../icons/stack.svg#cross");
+      background-size: 30px 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
