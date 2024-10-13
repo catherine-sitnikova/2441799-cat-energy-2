@@ -91,4 +91,16 @@
       background-size: 24px 12px;
     }
   }
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &:focus {
+    color: $primary-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
