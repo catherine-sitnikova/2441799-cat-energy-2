@@ -4,6 +4,17 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 25px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
+  }
 }
 
 .main-header__container {
@@ -14,6 +25,10 @@
 }
 
 .main-header__logo {
+  @media (min-width: $tablet-width) {
+    margin-right: 90px;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -50,6 +65,10 @@
   border: none;
   mask-image: url("../../icons/stack.svg#navicon");
   background-color: #000000;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__toggle--close {
