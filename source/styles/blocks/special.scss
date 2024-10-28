@@ -1,3 +1,15 @@
+.special__wrapper {
+  padding: 0 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 106px 69px 110px;
+  }
+}
+
 .special__title {
   margin: 0;
 
@@ -5,27 +17,41 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .special__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    row-gap: 37px;
+  }
 }
 
 .special__item {
   position: relative;
+  min-height: 60px;
 
-  &:not(:last-child) {
-    margin-bottom: 24px;
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
     left: 0;
     width: 60px;
     height: 60px;
