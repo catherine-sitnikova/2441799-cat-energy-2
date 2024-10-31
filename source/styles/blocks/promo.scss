@@ -18,11 +18,12 @@
       background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/index-background-mobile@2x.jpg");
     }
 
-    /* @media (min-width: $tablet-width) {
-      display: none;
-    } */
+    @media (min-width: $tablet-width) {
+      visibility: hidden;
+    }
 
     @media (min-width: $desktop-width) {
+      visibility: visible;
       position: absolute;
       top: -116px;
       right: 0;
