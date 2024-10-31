@@ -4,7 +4,7 @@
 
   padding: 20px 26px;
 
-  @media (min-width: $tablet-widrh) {
+  @media (min-width: $tablet-width) {
     padding: 60px 70px;
   }
 }
@@ -17,6 +17,11 @@
   line-height: 20px;
   text-align: left;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__description {
@@ -29,5 +34,14 @@
 
   span {
     display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    span {
+      margin-top: 20px;
+    }
   }
 }
