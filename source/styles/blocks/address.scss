@@ -1,0 +1,33 @@
+.address {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px 26px;
+
+  @media (min-width: $tablet-widrh) {
+    padding: 60px 70px;
+  }
+}
+
+.address__intro {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: left;
+  color: #111111;
+}
+
+.address__description {
+  margin: 0;
+
+  line-height: 20px;
+  text-align: left;
+
+  color: $special_dark-grey;
+
+  span {
+    display: block;
+  }
+}
