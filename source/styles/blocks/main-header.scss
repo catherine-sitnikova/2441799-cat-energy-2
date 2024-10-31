@@ -18,10 +18,16 @@
 }
 
 .main-header__container {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  padding: 13px 21px 20px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-header__logo {
