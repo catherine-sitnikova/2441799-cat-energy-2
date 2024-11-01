@@ -9,6 +9,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 45px 30px 101px;
+
+    background: linear-gradient($primary-bg-color 540px, $secondary-bg-color 540px);
   }
 
   @media (min-width: $desktop-width) {
@@ -17,7 +19,7 @@
 
     padding: 0 110px 75px;
 
-    background: linear-gradient(#ffffff 136px, #f2f2f2 136px);
+    background: linear-gradient($primary-bg-color 136px, $secondary-bg-color 136px);
   }
 }
 
@@ -154,7 +156,7 @@
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
-  background-color: #eaeaea;
+  background-color: $secondary-bg-color;
 
   @media (min-width: $tablet-width) {
     top: 63px;
@@ -164,6 +166,11 @@
     line-height: 14px;
 
     white-space: nowrap;
+    background-color: $primary-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $secondary-bg-color;
   }
 }
 
