@@ -6,6 +6,11 @@
 .cards-table__row {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 0 5px;
+    border-bottom: 1px solid $special-grey;
+  }
 }
 
 .cards-table__description {
