@@ -1,8 +1,15 @@
+.cards-all {
+  grid-template: "header" auto "text" auto "button" 61px / 100%;
+  justify-items: stretch;
+}
+
 .cards-all__title {
   position: relative;
   text-align: center;
 
   padding-top: 53px;
+  margin-bottom: 8px;
+  width: 100%;
 
   &::before {
     content: "";
@@ -22,6 +29,7 @@
 }
 
 .cards__text {
+  grid-area: text;
   margin: 0;
 
   font-size: 12px;
