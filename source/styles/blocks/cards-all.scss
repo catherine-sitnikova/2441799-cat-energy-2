@@ -1,17 +1,31 @@
 .cards-all {
-  grid-template: "header" auto "text" auto "button" 61px / 100%;
+  grid-template: "header" auto "text" auto "button" 40px / 100%;
   justify-items: stretch;
+
+  padding: 78px 20px 40px;
+
+  background-image: url("../../icons/stack.svg#plus");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 160px 37px 40px;
+    background-color: transparent;
+    background-position: 50% 50px;
+    border: 1px solid $basic-grey;
+  }
 }
 
 .cards-all__title {
   position: relative;
   text-align: center;
 
-  padding-top: 53px;
+  padding: 0;
   margin-bottom: 8px;
   width: 100%;
 
-  &::before {
+  /* &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -22,19 +36,29 @@
     width: 30px;
     height: 30px;
 
-    background-image: url("../../icons/stack.svg#plus");
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
+     background: linear-gradient(to bottom, transparent 35%, #000000 35%, #000000 65%, transparent 65%), linear-gradient(to right, transparent 35%, #000000 35%, #000000 65%, transparent 65%);
+  } */
+
+  @media (min-width: $tablet-width) {
+    padding: 0 57px;
   }
 }
 
 .cards__text {
   grid-area: text;
   margin: 0;
+  margin-bottom: 21px;
 
   font-size: 12px;
   line-height: 16px;
   text-align: center;
 
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
