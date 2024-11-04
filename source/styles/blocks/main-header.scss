@@ -1,4 +1,4 @@
-.main-header {
+.main-header__wrapper {
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
@@ -15,7 +15,11 @@
   @media (min-width: $desktop-width) {
     padding: 55px 110px 0;
     position: relative;
+  }
+}
 
+.main-header__wrapper--index {
+  @media (min-width: $desktop-width) {
     &::after {
       content: "";
       position: absolute;
@@ -34,7 +38,7 @@
   }
 }
 
-.main-header__container {
+.main-header__logo-container {
   position: relative;
 
   display: flex;
