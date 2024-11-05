@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 74px 30px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 109px 0 110px;
+  }
 }
 
 .sub-products__wrapper {
@@ -19,7 +23,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 80px;
+    column-gap: 81px;
   }
 }
 
@@ -49,6 +53,7 @@
 .sub-products__list {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -75,6 +80,17 @@
     border-left: 1px solid $special-grey;
     border-right: 1px solid $special-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    gap: 40px;
+    grid-template: "header table button" 40px / 285px 285px 244px;
+    align-items: center;
+
+    padding: 15px 0;
+    border-right: none;
+    border-left: none;
+  }
 }
 
 .sub-products__item-title {
@@ -85,6 +101,11 @@
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .sub-products__table {
@@ -101,6 +122,13 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     column-gap: 49px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
   }
 }
 
@@ -111,36 +139,5 @@
 
 .sub-products__button {
   grid-area: button;
-}
-
-.sub-products__gift {
-  height: 290px;
-  background-color: $basic-green-opacity;
-  background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-mobile@2x.png");
-  }
-
-  @media (min-width: $tablet-width) {
-    height: 200px;
-    background-color: $basic-green-opacity;
-    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-tablet@1x.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-tablet@2x.png");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 288px;
-    background-color: $basic-green-opacity;
-    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-desktop@1x.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-desktop@2x.png");
-    }
-  }
+  align-self: stretch;
 }
