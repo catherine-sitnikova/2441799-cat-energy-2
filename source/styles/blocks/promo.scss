@@ -108,6 +108,10 @@
     line-height: 20px;
     text-transform: uppercase;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .promo__img {
