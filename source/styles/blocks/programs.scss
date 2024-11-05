@@ -126,14 +126,25 @@
 }
 
 .programs__link {
+  position: relative;
+  width: 139px;
+  padding: 4px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+  }
+
   span {
-    position: relative;
+    padding-right: 47px;
+
     font-family: $secondary-font;
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
 
     @media (min-width: $tablet-width) {
+      padding-right: 57px;
+
       font-size: 20px;
       line-height: 29.64px;
     }
@@ -141,9 +152,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 50%;
-      left: 98px;
-      transform: translateY(-50%);
+      top: 20%;
+      right: 0;
 
       width: 32px;
       height: 10px;
