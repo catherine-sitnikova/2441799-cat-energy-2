@@ -3,10 +3,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 45 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
     padding: 71 106px 69px 110px;
+    border: none;
   }
 }
 
@@ -54,14 +56,31 @@
   min-height: 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0 57px;
-    min-height: 280px;
     flex-basis: 35%;
+
+    /* для цифр
+
+    &::before {
+      content: counter(special__item) " ";
+      font-family: "Oswald", "Arial", sans-serif;
+      top: -11px;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+      right: 90px;
+    } */
   }
 
   @media (min-width: $desktop-width) {
     flex-basis: 20%;
   }
+}
+
+.special__item-text {
+  margin: 0;
+  margin-left: 80px;
 
   &::before {
     content: "";
@@ -69,26 +88,24 @@
     left: 0;
     width: 60px;
     height: 60px;
-
     background-color: $basic-green;
 
     @media (min-width: $tablet-width) {
+      left: 0;
+      top: 40px;
       width: 80px;
       height: 80px;
     }
   }
 
-  p {
+  @media (min-width: $tablet-width) {
     margin: 0;
-    margin-left: 80px;
-
-    @media (min-width: $tablet-width) {
-      margin: 151px 0 0;
-    }
+    padding: 151px 0 57px;
+    min-height: 280px;
   }
 }
 
-.special__item--leaf::after {
+.special__item-text--leaf::after {
   content: "";
   position: absolute;
   top: 14px;
@@ -105,7 +122,7 @@
   }
 }
 
-.special__item--powder::after {
+.special__item-text--powder::after {
   content: "";
   position: absolute;
   top: 16px;
@@ -121,7 +138,7 @@
   }
 }
 
-.special__item--eat::after {
+.special__item-text--eat::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -137,7 +154,7 @@
   }
 }
 
-.special__item--clock::after {
+.special__item-text--clock::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -152,4 +169,3 @@
     left: 27px;
   }
 }
-
