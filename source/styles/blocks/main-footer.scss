@@ -1,5 +1,11 @@
+.main-footer {
+  background-color: $basic-grey;
+}
+
 .main-footer__location {
-  img {
-    display: block;
-  }
+  display: block;
+}
+
+.main-footer__address--light {
+  background-color: $primary-bg-color;
 }
