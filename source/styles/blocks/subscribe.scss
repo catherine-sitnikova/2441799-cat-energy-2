@@ -77,7 +77,7 @@
   line-height: 29.64px;
 
   color: #444444;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special-grey;
 
   &::placeholder {
     color: #444444;
@@ -87,11 +87,23 @@
     min-width: 376px;
     height: 54px;
     border: none;
-    outline: 1px solid #cdcdcd;
+    outline: 1px solid $special-grey;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 496px;
+  }
+
+  &:hover {
+    outline: 1px solid $special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $special_dark-grey;
+  }
+
+  &:active {
+    outline: 2px solid $special_dark-grey;
   }
 }
 
