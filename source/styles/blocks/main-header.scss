@@ -67,6 +67,10 @@
   &:active {
     opacity: 0.6;
   }
+
+  &--active {
+    pointer-events: none;
+  }
 }
 
 .main-header__logo-text {
