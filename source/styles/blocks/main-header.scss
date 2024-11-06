@@ -96,6 +96,7 @@
   border: none;
   mask-image: url("../../icons/stack.svg#navicon");
   background-color: #000000;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;

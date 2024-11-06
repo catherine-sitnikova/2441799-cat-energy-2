@@ -127,41 +127,12 @@
 
 .programs__link {
   position: relative;
+  display: block;
   width: 139px;
   padding: 4px 0;
 
   @media (min-width: $tablet-width) {
     width: 165px;
-  }
-
-  span {
-    padding-right: 47px;
-
-    font-family: $secondary-font;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-
-    @media (min-width: $tablet-width) {
-      padding-right: 57px;
-
-      font-size: 20px;
-      line-height: 29.64px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 20%;
-      right: 0;
-
-      width: 32px;
-      height: 10px;
-
-      background-image: url("../../icons/stack.svg#icon-arrow");
-      background-repeat: no-repeat;
-      background-size: 24px 12px;
-    }
   }
 
   &:hover {
@@ -175,4 +146,40 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:hover .programs__link-text::after {
+    background-position: -8px;
+  }
 }
+
+.programs__link-text {
+  padding-right: 47px;
+
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 57px;
+
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 0;
+
+    width: 32px;
+    height: 10px;
+
+    background-image: url("../../icons/stack.svg#icon-arrow");
+    background-repeat: no-repeat;
+    background-size: 24px 12px;
+    background-position: left;
+  }
+}
+
