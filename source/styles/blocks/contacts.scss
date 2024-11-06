@@ -32,6 +32,18 @@
     padding: 0;
     height: 24px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .contacts__social-list {
@@ -64,6 +76,19 @@
   mask-position: center;
   mask-repeat: no-repeat;
   mask-size: 28px 22px;
+
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:focus {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    background-color: $basic-green;
+    opacity: 0.3;
+  }
 }
 
 .contacts__social-link--vkontakte {
@@ -90,6 +115,18 @@
     gap: 23px;
     padding: 0;
     width: auto;
+  }
+
+  &:hover > .contacts__copyright-pic {
+    background-color: $basic-green;
+  }
+
+  &:focus > .contacts__copyright-pic {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
