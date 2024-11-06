@@ -126,8 +126,6 @@
 }
 
 .programs__link {
-  position: relative;
-  display: block;
   width: 139px;
   padding: 4px 0;
 
@@ -148,11 +146,13 @@
   }
 
   &:hover .programs__link-text::after {
-    background-position: -8px;
+    background-position: 0;
+    transition: background-position 0.5s;
   }
 }
 
 .programs__link-text {
+  position: relative;
   padding-right: 47px;
 
   font-family: $secondary-font;
@@ -170,16 +170,17 @@
   &::after {
     content: "";
     position: absolute;
-    top: 25%;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
 
     width: 32px;
-    height: 10px;
+    height: 12px;
 
     background-image: url("../../icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
-    background-size: 24px 12px;
-    background-position: left;
+    background-size: 32px 12px;
+    background-position: -8px;
   }
 }
 
