@@ -58,19 +58,21 @@
   @media (min-width: $tablet-width) {
     flex-basis: 35%;
 
-    /* для цифр
+    counter-increment: chapter 1;
 
     &::before {
-      content: counter(special__item) " ";
+      content: counter(chapter);
+      position: absolute;
+      z-index: -1;
+      left: 111px;
+      bottom: 0;
+
       font-family: "Oswald", "Arial", sans-serif;
-      top: -11px;
       font-weight: 400;
       font-size: 280px;
       line-height: 280px;
-      color: #f2f2f2;
-      z-index: -1;
-      right: 90px;
-    } */
+      color: $basic-grey;
+    }
   }
 
   @media (min-width: $desktop-width) {
