@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     padding: 45px 30px 101px;
 
-    background: linear-gradient($primary-bg-color 540px, $secondary-bg-color 540px);
+    background: linear-gradient($primary-bg-color 619px, $secondary-bg-color 619px);
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +30,12 @@
 
   @media (min-width: $tablet-width) {
     align-items: stretch;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 436px;
   }
 }
 
