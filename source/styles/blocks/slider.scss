@@ -64,7 +64,46 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  width: 40px;
+  width: 4px;
   height: 256px;
+  border-radius: 2px;
+
+  background-color: #666666;
   cursor: pointer;
+
+  @media (min-resolution: $tablet-width) {
+    width: 4px;
+    height: 512px;
+  }
+
+  &:hover {
+    background-color: $basic-green;
+
+    rect {
+      stroke: $basic-green;
+    }
+
+    path {
+      fill: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+
+    rect {
+      opacity: 0.6;
+    }
+
+    path {
+      opacity: 0.6;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
