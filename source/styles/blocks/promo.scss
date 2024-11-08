@@ -21,22 +21,6 @@
     @media (min-width: $tablet-width) {
       visibility: hidden;
     }
-
-    /* @media (min-width: $desktop-width) {
-      visibility: visible;
-      position: absolute;
-      top: -116px;
-      right: 0;
-      z-index: -1;
-
-      width: 50%;
-      height: 694px;
-      color: $secondary-color;
-      background-color: $basic-green-opacity;
-      background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    } */
   }
 }
 
@@ -45,6 +29,11 @@
   flex-direction: column;
   align-items: center;
   padding: 27px 20px 0;
+
+  @media (max-width: 767px) {
+    margin-top: 65px;
+  }
+
 
   @media (min-width: $tablet-width) {
     align-items: stretch;
@@ -126,7 +115,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     margin: 0;
-    margin-top: -257px;
+    margin-top: -363px;
     left: 34.6%;
   }
 }

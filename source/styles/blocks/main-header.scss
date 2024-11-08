@@ -1,3 +1,14 @@
+.main-header {
+  @media (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    width: 320px;
+    background-color: $primary-bg-color;
+  }
+}
+
 .main-header__wrapper {
   font-family: $secondary-font;
   font-size: 20px;
@@ -94,13 +105,16 @@
   padding: 4px 0;
 
   border: none;
-  mask-image: url("../../icons/stack.svg#navicon");
-  background-color: #000000;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-header__toggle--open {
+  mask-image: url("../../icons/stack.svg#navicon");
+  background-color: #000000;
 }
 
 .main-header__toggle--close {

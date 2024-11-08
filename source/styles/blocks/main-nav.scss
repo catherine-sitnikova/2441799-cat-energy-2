@@ -1,9 +1,27 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+  z-index: 1;
+
+  background-color: $primary-bg-color;
+
+  @media (max-width: 767px) {
+    position: absolute;
+    width: 320px;
+  }
 
   @media (min-width: $tablet-width) {
     justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.main-nav--closed {
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
