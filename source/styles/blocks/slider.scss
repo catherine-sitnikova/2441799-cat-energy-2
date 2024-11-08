@@ -71,7 +71,7 @@
   background-color: #666666;
   cursor: pointer;
 
-  @media (min-resolution: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 4px;
     height: 512px;
   }
