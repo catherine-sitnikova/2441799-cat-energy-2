@@ -87,7 +87,7 @@
 
 .programs__title {
   margin: 0;
-  margin-left: 90px;
+  margin-left: 70px;
   margin-bottom: 29px;
   font-family: $secondary-font;
   font-size: 24px;
@@ -111,8 +111,25 @@
 
 .programs__description {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
+  padding-bottom: 23px;
   color: $special_dark-grey;
+
+  @media (max-width: 767px) {
+    position: relative;
+    padding-bottom: 23px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      min-width: 240px;
+
+      background-color: #d9d9d9;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
