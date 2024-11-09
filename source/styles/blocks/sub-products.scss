@@ -1,5 +1,5 @@
 .sub-products {
-  padding: 25px 0 0;
+  padding: 23px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 74px 0 0;
@@ -88,7 +88,7 @@
 
 .sub-products__item {
   display: grid;
-  grid-template: "header" auto "table" auto "button" 40px;
+  grid-template: "header" auto "table" auto "button" auto;
   gap: 13px;
 
   padding: 13px 0 19px;
@@ -166,4 +166,5 @@
 .sub-products__button {
   grid-area: button;
   align-self: stretch;
+  height: 40px;
 }
