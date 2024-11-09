@@ -55,6 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-items: center;
     grid-template-columns: 245px 245px 245px 245px;
     grid-template-rows: 430px 430px;
     gap: 144px 80px;
@@ -86,6 +87,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template: "pic" 151px "header" auto "tablet" auto "button" 40px;
+
     padding: 0 38px 40px;
   }
 }
@@ -118,7 +121,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 15.4px;
-    padding: 0 15px;
+    padding: 0 21px;
     width: 100%;
   }
 }
@@ -169,6 +172,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
 .cards__button {
@@ -177,5 +184,9 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
