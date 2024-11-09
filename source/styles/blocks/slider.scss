@@ -12,6 +12,10 @@
     width: 560px;
     height: 512px;
   }
+
+  @media (min-width: $desktop-width) {
+    bottom: 10px;
+  }
 }
 
 .slider__item {

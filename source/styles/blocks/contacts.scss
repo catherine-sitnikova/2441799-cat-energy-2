@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    gap: 120px;
 
     padding: 55px 30px;
   }
@@ -29,6 +30,7 @@
   mask-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
+    margin-right: 40px;
     padding: 0;
     height: 24px;
   }
