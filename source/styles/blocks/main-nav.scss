@@ -7,6 +7,7 @@
 
   @media (max-width: 767px) {
     position: absolute;
+    margin-bottom: 2px;
     width: 320px;
   }
 
@@ -46,7 +47,7 @@
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
-    padding: 12px 0 10px;
+    padding: 12px 0 8px;
 
     font-size: 18px;
     line-height: 24px;

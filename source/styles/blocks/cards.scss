@@ -76,8 +76,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-template: "pic" 155px "header" auto "tablet" auto "button" 40px;
-    padding: 0 50px 40px;
+    justify-items: center;
+
+    grid-template: "pic" 161px "header" auto "tablet" auto "button" 40px;
+    padding: 0 37px 40px;
 
     background-color: $basic-grey;
     border: none;
@@ -130,17 +132,23 @@
   width: 140px;
   height: 107px;
   object-fit: none;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
 }
 
 .cards__pic--small {
   @media (min-width: $tablet-width) {
-    margin-top: -52px;
+    margin-top: -70px;
+    padding: 0 19.5px;
   }
 }
 
 .cards__pic--big {
   @media (min-width: $tablet-width) {
-    margin-top: -67px;
+    margin-top: -70px;
   }
 }
 
@@ -156,6 +164,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
+    width: 250px;
 
     font-size: 16px;
     line-height: 20px;
@@ -165,4 +174,8 @@
 .cards__button {
   grid-area: button;
   height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
 }
