@@ -97,7 +97,7 @@
 
 .subscribe__input {
   width: 100%;
-  padding: 13px;
+  padding: 12px;
 
   font-family: $secondary-font;
   font-size: 20px;
@@ -137,6 +137,9 @@
 
 .subscribe__button {
   height: 56px;
+
+  font-size: 20px;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
     width: 256px;

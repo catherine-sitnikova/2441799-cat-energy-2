@@ -88,10 +88,9 @@
 
 .sub-products__item {
   display: grid;
-  grid-template: "header" auto "table" auto "button" auto;
-  gap: 13px;
+  grid-template: "header" auto "table" auto "button" 40px;
 
-  padding: 13px 0 19px;
+  padding: 12px 0 19px;
   border-top: 1px solid $special-grey;
 
   &:last-child {
@@ -121,6 +120,7 @@
 
 .sub-products__item-title {
   margin: 0;
+  margin-bottom: 13px;
 
   font-family: $secondary-font;
   font-size: 16px;
@@ -138,7 +138,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding-bottom: 2px;
+  margin-bottom: 15px;
 
   font-size: 14px;
   line-height: 14px;
