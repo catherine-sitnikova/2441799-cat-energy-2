@@ -181,4 +181,8 @@
   grid-area: button;
   align-self: stretch;
   height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
