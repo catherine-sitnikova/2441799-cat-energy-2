@@ -115,6 +115,8 @@
     grid-template: "header table button" auto / 285px 285px 244px;
     align-items: center;
 
+    height: 100%;
+
     padding: 15px 0;
     border-right: none;
     border-left: none;
@@ -185,4 +187,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
 }
